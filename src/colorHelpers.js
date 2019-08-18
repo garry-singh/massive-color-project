@@ -34,8 +34,8 @@ function getRange(hexColor) {
 	return [ chroma(hexColor).darken(1.4).hex(), hexColor, end ];
 }
 
-function getScale(hexColor, numberofColors) {
-	return chroma.scale(getRange(hexColor)).mode('lab').colors(numberofColors);
+function getScale(hexColor, numberOfColors) {
+	return chroma.scale(getRange(hexColor)).mode('lab').colors(numberOfColors);
 }
 
 export { generatePalette };
